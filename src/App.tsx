@@ -1,6 +1,6 @@
 import { Route, Routes } from 'react-router-dom';
 import Employees from './pages/employees/Employees.tsx';
-import CreateEmployee from './pages/createEmployee/CreateEmployee.tsx';
+import EditEmployee from './pages/editEmployee/EditEmployee.tsx';
 
 function App() {
   return (
@@ -8,8 +8,8 @@ function App() {
       <div className="container mx-auto px-3 sm:px-0">
         <Routes>
           <Route path="/" element={<Employees />} />
-          <Route path="/create" element={<CreateEmployee />} />
-          <Route path="/edit/:id" element={<CreateEmployee />} />
+          <Route path="/create" element={<EditEmployee />} />
+          <Route path="/edit/:id" element={<EditEmployee />} />
         </Routes>
       </div>
     </div>
